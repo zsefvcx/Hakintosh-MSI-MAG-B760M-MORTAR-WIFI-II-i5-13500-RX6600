@@ -15,7 +15,7 @@
 
 ## Software
 
-- **OS:** macOS Sonoma 14.7 / Sequoia 15.0
+- **OS:** macOS Sequoia 15.0
 - **Bootloader:** OpenCore 1.0.1
 
 ## What's working
@@ -25,23 +25,9 @@
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
 - [x] WiFi  / with HeliPort and Itlwm
-- [X] Bluetooth (Not work in Sequoia )
+- [X] Bluetooth (testing)
 - [x] USB
 - [x] macOS & Windows 11
-
-# Bluetooth (in testing) [link](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)
-
-Download IntelBluetoothFirmware.kext 2.5.0 [Link](https://dortania.github.io/builds/?product=IntelBluetoothFirmware&viewall=true&version=2.5.0&sha=50e971c524081a1d97a72794db2640aa0136e284) (thanks [@tonymacx86](https://www.tonymacx86.com/members/3/)
-Download BlueToolFixup.kext 2.6.9 [Link](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) (You'll find it inside the BrcmPatchRAM folder)
-  
-In config.plist I added the following NVRAM entries, (thanks [@Shaneee](https://www.tonymacx86.com/members/2381583/));
-  
-      NVRAM > Add > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
-          bluetoothExternalDongleFailed — Data — 00
-          bluetoothInternalControllerInfo — Data — 00000000 00000000 00000000 0000
-      NVRAM > Delete > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
-          0 — String — bluetoothExternalDongleFailed
-          1 — String — bluetoothInternalControllerInfo
 
 ## BIOS Settings
 
@@ -68,25 +54,25 @@ OC - CPU Features:
 - CFG Lock: Disabled
 
 ## Kexts
-| Name                                                                                                               | Version       |      |
-|--------------------------------------------------------------------------------------------------------------------| ------------- | ---- |
-| [Lilu](https://github.com/acidanthera/Lilu/releases)                                                               | 1.6.8         |      |
-| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases)<br /> SMCProcessor <br /> SMCSuperIO              | 1.3.3         |      |
-| [SMCRadeonSensors](https://github.com/NootInc/RadeonSensor/releases)                                               | 2.2.0         |      |
-| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)                                             | 1.6.7         |      |
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases)                                                       | 1.9.1         |      |
-| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases)                                                         | 1.1.1         |      |
-| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/)                                                    | 1.2.8         | not loaded     |
-| [CPUFriendDataProvider]()                                                                                          | 1.0.0         | not loaded     |
-| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild)                                                 | 1.1.0         |      |
-| [RestrictEvents](https://github.com/acidanthera/RestrictEvents)                                                    | 1.1.4         |      |
-| [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)                      | 1.1.0         |      |
-| [USBInjectAll]()                                                                                                   | 0.8.0         | not loaded     |
-| [USBPorts]()                                                                                                       | 1.0.0         | usb on motherboard |
-| [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases)                                                | 2.3.0 Sonoma 14.4+ |      |
-| [itlwm](https://github.com/OpenIntelWireless/itlwm/releases)                                                       | 2.3.0         |      |
-| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/releases)                                              | 2.6.8         |      |
-| [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases)<br />IntelBTPatcher | 2.4.0         |      |
+| Name                                                                                                                                                                                                            | Version            |      |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------| ---- |
+| [Lilu](https://github.com/acidanthera/Lilu/releases)                                                                                                                                                            | 1.6.8              |      |
+| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases)<br /> SMCProcessor <br /> SMCSuperIO                                                                                                           | 1.3.3              |      |
+| [SMCRadeonSensors](https://github.com/NootInc/RadeonSensor/releases)                                                                                                                                            | 2.2.0              |      |
+| [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)                                                                                                                                          | 1.6.7              |      |
+| [AppleALC](https://github.com/acidanthera/AppleALC/releases)                                                                                                                                                    | 1.9.1              |      |
+| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases)                                                                                                                                                      | 1.1.1              |      |
+| [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/)                                                                                                                                                 | 1.2.8              | not loaded     |
+| [CPUFriendDataProvider]()                                                                                                                                                                                       | 1.0.0              | not loaded     |
+| [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild)                                                                                                                                              | 1.1.0              |      |
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents)                                                                                                                                                 | 1.1.4              |      |
+| [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)                                                                                                                   | 1.1.0              |      |
+| [USBInjectAll]()                                                                                                                                                                                                | 0.8.0              | not loaded     |
+| [USBPorts]()                                                                                                                                                                                                    | 1.0.0              | usb on motherboard |
+| [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases)                                                                                                                                             | 2.3.0 Sonoma 14.4+ |      |
+| [itlwm](https://github.com/OpenIntelWireless/itlwm/releases)                                                                                                                                                    | 2.3.0              |      |
+| [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM/releases)  [Link2](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) | 2.6.9              |      |
+| [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) [Link2](https://dortania.github.io/builds/?product=IntelBluetoothFirmware&viewall=true&version=2.5.0&sha=50e971c524081a1d97a72794db2640aa0136e284)<br />IntelBTPatcher                                                                                    | 2.5.0              |      |
 
 ## Config
 
@@ -100,6 +86,19 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 - NVRAM-Add-4D1FDA02...: add new item `revcpu` with value 1 (number)
 - NVRAM-Del-4D1FDA02...: add item `revcpu`
 - PlatformInfo-Generic-ProcessorType: `3841` (need `RestrictEvents.kext`)
+
+# Bluetooth (testing) [thanks link](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)
+
+IntelBluetoothFirmware.kext, IntelBTPatcher.kext 2.5.0 (thanks [@tonymacx86](https://www.tonymacx86.com/members/3/)) <br />
+BlueToolFixup.kext 2.6.9 ~~(You'll find it inside the BrcmPatchRAM folder)~~ <br />
+In config.plist added the following NVRAM entries, (thanks [@Shaneee](https://www.tonymacx86.com/members/2381583/)) <br />
+
+      NVRAM > Add > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
+          bluetoothExternalDongleFailed — Data — 00
+          bluetoothInternalControllerInfo — Data — 00000000 00000000 00000000 0000
+      NVRAM > Delete > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
+          bluetoothExternalDongleFailed
+          bluetoothInternalControllerInfo
 
 ## Mount EFI Partition on macOS Sequoia and Later
 
