@@ -29,6 +29,21 @@
 - [x] USB
 - [x] macOS & Windows 11
 
+# Bluetooth (in testing) [link](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)
+
+      Download IntelBluetoothFirmware.kext 2.5.0 [Link](https://dortania.github.io/builds/?product=IntelBluetoothFirmware&viewall=true&version=2.5.0&sha=50e971c524081a1d97a72794db2640aa0136e284) (thanks [@tonymacx86](https://www.tonymacx86.com/members/3/)
+      Download BlueToolFixup.kext 2.6.9 [Link](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) (You'll find it inside the BrcmPatchRAM folder)
+  
+  
+  In config.plist I added the following NVRAM entries, (thanks @Shaneee);
+  
+      NVRAM > Add > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
+          bluetoothExternalDongleFailed — Data — 00
+          bluetoothInternalControllerInfo — Data — 00000000 00000000 00000000 0000
+      NVRAM > Delete > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
+          0 — String — bluetoothExternalDongleFailed
+          1 — String — bluetoothInternalControllerInfo
+
 ## BIOS Settings
 
 MSI MAG B760M MORTAR WIFI II AMI BIOS ver 7E13v17 build 2024-08-30
