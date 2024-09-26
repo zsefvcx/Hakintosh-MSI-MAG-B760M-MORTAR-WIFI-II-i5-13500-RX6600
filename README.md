@@ -24,7 +24,7 @@
 - [x] dGPU
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
-- [x] WiFi  / with HeliPort 
+- [x] WiFi  / with HeliPort and Itlwm
 - [X] Bluetooth (Not work in Sequoia )
 - [x] USB
 - [x] macOS & Windows 11
