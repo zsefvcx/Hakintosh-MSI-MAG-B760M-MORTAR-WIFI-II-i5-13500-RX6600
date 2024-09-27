@@ -24,11 +24,11 @@
 - [x] dGPU
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
-- [x] WiFi  / with HeliPort and Itlwm
-<img alt="img2.png" height="338" src="img2.png" width="298"/>
-- [X] Bluetooth
-<img alt="img3.png" height="414" src="img3.png" width="565"/>
-- [x] USB
+- [x] WiFi  / with HeliPort and Itlwm<br />
+<img alt="img2.png" height="338" src="img2.png" width="298"/><br />
+- [X] Bluetooth<br />
+<img alt="img3.png" height="414" src="img3.png" width="565"/><br />
+- [x] USB<br />
 - [x] macOS & Windows 11 & Linux (Debian)
 
 ## BIOS Settings
