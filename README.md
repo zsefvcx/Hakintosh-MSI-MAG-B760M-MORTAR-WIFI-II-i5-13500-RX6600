@@ -16,7 +16,7 @@
 - **OS:** macOS Sequoia 15.0
 - **Bootloader:** OpenCore 1.0.1
 
-<img alt="img_1.png" height="595" src="img.png" width="476"/>
+<img alt="img.png" height="595" src="img.png" width="476"/>
 
 ## What's working
 
@@ -25,9 +25,11 @@
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
 - [x] WiFi  / with HeliPort and Itlwm
-- [X] Bluetooth (testing)
+<img alt="img2.png" height="595" src="img2.png" width="476"/>
+- [X] Bluetooth
+<img alt="img3.png" height="595" src="img3.png" width="476"/>
 - [x] USB
-- [x] macOS & Windows 11
+- [x] macOS & Windows 11 & Linux (Debian)
 
 ## BIOS Settings
 
@@ -88,8 +90,8 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 - PlatformInfo-Generic-ProcessorType: `3841` (need `RestrictEvents.kext`)
 
 # Bluetooth (testing) 
-[link2](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
-[link3](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486)
+[link1](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
+[link2](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486)
 
 [IntelBluetoothFirmware.kext 2.5.0](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/post-36917) <br />
 [IntelBTPatcher.kext 2.5.0 pre-release one](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486#issuecomment-2357211572)
@@ -106,11 +108,11 @@ In config.plist added the following NVRAM entries link3<br />
           bluetoothInternalControllerInfo
 
 
-## Mount EFI Partition on macOS Sequoia and Later
+# Mount EFI Partition on macOS Sequoia and Later
 
 1. diskutil list
 2. sudo mkdir /Volumes/efi
 3. sudo mount -t msdos /dev/diskXsY /Volumes/efi
 4. sudo diskutil unmount /dev/diskXsY
 
-## Based on repository: [oc-b760m-13700-6800](https://github.com/ichenhe/oc-b760m-13700-6800)
+# Based on repository: [oc-b760m-13700-6800](https://github.com/ichenhe/oc-b760m-13700-6800)
