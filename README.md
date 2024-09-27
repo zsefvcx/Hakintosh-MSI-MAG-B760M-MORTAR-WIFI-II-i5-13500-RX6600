@@ -1,6 +1,6 @@
 ⚠️ **WARNING: You must add your own serial number in `EFI/OC/config.plist`.** Related fields are: `PlatformInfo - Generic - MLB / SystemProductName / SystemSerialNumber / SystemUUID`. You can generate some random numbers by [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). See [official guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#platforminfo) for details.
 
-## Based on repository: [oc-b760m-13700-6800](https://github.com/ichenhe/oc-b760m-13700-6800)
+### Based on repository: [oc-b760m-13700-6800](https://github.com/ichenhe/oc-b760m-13700-6800)
 
 ## Hardware
 
@@ -11,12 +11,14 @@
 - **CPU:** Intel Core i5 13500 (iGPU not working in MacOs)
 - **dGPU:** Sapphire AMD RX 6600 PULSE
 - **Storage:**  Adata Legend 850 512GB
-- **RAM:** Adata DDR5 6400 16GB*2 (only 6000, 6400 not starting)
+- **RAM:** Adata DDR5 6400 16GB*2 (only 6000)
 
 ## Software
 
 - **OS:** macOS Sequoia 15.0
 - **Bootloader:** OpenCore 1.0.1
+
+<img alt="img_1.png" height="342" src="img.png" width="280"/>
 
 ## What's working
 
