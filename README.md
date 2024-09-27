@@ -89,8 +89,10 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 - NVRAM-Del-4D1FDA02...: add item `revcpu`
 - PlatformInfo-Generic-ProcessorType: `3841` (need `RestrictEvents.kext`)
 
-# Bluetooth (testing) [thanks link](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)
-[thanks link2](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
+# Bluetooth (testing) 
+[link1](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)
+[link2](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
+[link3](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486)
 
 IntelBluetoothFirmware.kext, IntelBTPatcher.kext 2.5.0 (thanks [@tonymacx86](https://www.tonymacx86.com/members/3/)) <br />
 BlueToolFixup.kext 2.6.9 ~~(You'll find it inside the BrcmPatchRAM folder)~~ <br />
