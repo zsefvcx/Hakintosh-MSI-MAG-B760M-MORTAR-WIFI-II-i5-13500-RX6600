@@ -1,7 +1,5 @@
 ⚠️ **WARNING: You must add your own serial number in `EFI/OC/config.plist`.** Related fields are: `PlatformInfo - Generic - MLB / SystemProductName / SystemSerialNumber / SystemUUID`. You can generate some random numbers by [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). See [official guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#platforminfo) for details.
 
-### Based on repository: [oc-b760m-13700-6800](https://github.com/ichenhe/oc-b760m-13700-6800)
-
 ## Hardware
 
 - **Motherboard:** MSI MAG B760M MORTAR WIFI II
@@ -27,7 +25,7 @@
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
 - [x] WiFi  / with HeliPort and Itlwm
-- [ ] Bluetooth (testing)
+- [X] Bluetooth (testing)
 - [x] USB
 - [x] macOS & Windows 11
 
@@ -90,16 +88,15 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 - PlatformInfo-Generic-ProcessorType: `3841` (need `RestrictEvents.kext`)
 
 # Bluetooth (testing) 
-~~[link1](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)~~
 [link2](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
 [link3](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486)
 
 [IntelBluetoothFirmware.kext 2.5.0](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/post-36917) <br />
 [IntelBTPatcher.kext 2.5.0 pre-release one](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486#issuecomment-2357211572)
 
-[BlueToolFixup.kext, ~~BrcmPatchRAM3.kext 2.6.9~~?](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) <br />
+[BlueToolFixup.kext](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) <br />
 
-~~In config.plist added the following NVRAM entries link3<br />~~
+In config.plist added the following NVRAM entries link3<br />
 
       NVRAM > Add > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
           bluetoothExternalDongleFailed — Data — 00
@@ -108,9 +105,6 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
           bluetoothExternalDongleFailed
           bluetoothInternalControllerInfo
 
-~~or/and~~
-
-~~add in boot arg -btlfxallowanyaddr~~ ?
 
 ## Mount EFI Partition on macOS Sequoia and Later
 
@@ -118,3 +112,5 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 2. sudo mkdir /Volumes/efi
 3. sudo mount -t msdos /dev/diskXsY /Volumes/efi
 4. sudo diskutil unmount /dev/diskXsY
+
+## Based on repository: [oc-b760m-13700-6800](https://github.com/ichenhe/oc-b760m-13700-6800)
