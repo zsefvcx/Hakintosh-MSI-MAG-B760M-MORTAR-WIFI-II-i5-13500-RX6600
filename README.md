@@ -25,7 +25,7 @@
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
 - [x] WiFi  / with HeliPort and Itlwm
-- [X] Bluetooth (testing)
+- [ ] Bluetooth
 - [x] USB
 - [x] macOS & Windows 11
 
