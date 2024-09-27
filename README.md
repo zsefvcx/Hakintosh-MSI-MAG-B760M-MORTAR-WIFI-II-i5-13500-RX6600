@@ -18,7 +18,7 @@
 - **OS:** macOS Sequoia 15.0
 - **Bootloader:** OpenCore 1.0.1
 
-<img alt="img_1.png" height="685" src="img.png" width="561"/>
+<img alt="img_1.png" height="595" src="img.png" width="476"/>
 
 ## What's working
 
