@@ -7,7 +7,7 @@
 /EFI/.DS_Store
 /EFI/._*
 /EFI/*.empty
-/EFI/oldConfig.plist
+/EFI/**/oldConfig.plist
 /EFI/.contentFlavour
 /EFI/.contentVisibility
 .DS_Store

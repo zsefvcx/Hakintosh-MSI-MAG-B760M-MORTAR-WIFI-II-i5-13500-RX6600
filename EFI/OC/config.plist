@@ -618,7 +618,7 @@
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
-                <false/>
+                <true/>
                 <key>InstanceIdentifier</key>
                 <string></string>
                 <key>LauncherOption</key>
@@ -632,7 +632,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Acidanthera\GoldenGate</string>
+                <string>Acidanthera\Syrah</string>
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
@@ -742,53 +742,9 @@
                     <key>FullNvramAccess</key>
                     <true/>
                     <key>Name</key>
-                    <string>CleanNvram</string>
-                    <key>Path</key>
-                    <string>CleanNvram.efi</string>
-                    <key>RealPath</key>
-                    <true/>
-                    <key>TextMode</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>FullNvramAccess</key>
-                    <true/>
-                    <key>Name</key>
                     <string>OpenShell</string>
                     <key>Path</key>
                     <string>OpenShell.efi</string>
-                    <key>RealPath</key>
-                    <true/>
-                    <key>TextMode</key>
-                    <true/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>FullNvramAccess</key>
-                    <true/>
-                    <key>Name</key>
-                    <string>ResetSystem</string>
-                    <key>Path</key>
-                    <string>ResetSystem.efi</string>
                     <key>RealPath</key>
                     <true/>
                     <key>TextMode</key>
@@ -812,11 +768,11 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-v alcid=12 igfxonln=1 agdpmod=pikera -wegnoigpu</string>
+                    <string>alcid=12 igfxonln=1 agdpmod=pikera -wegnoigpu</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
-                    <string>7A682D48616E733A323532</string>
+                    <string>en_EN:0</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -852,7 +808,7 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>XXXXXXXXXXXXXXXXX</string>
+                <string>00000000000000000</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -866,9 +822,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>XXXXXXXXXXXX</string>
+                <string>000000000000</string>
                 <key>SystemUUID</key>
-                <string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX</string>
+                <string>00000000-0000-0000-0000-000000000000</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1027,6 +983,30 @@
                     <false/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>NTFS.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>OpenLinuxBoot.efi</string>
                 </dict>
             </array>
             <key>Input</key>
