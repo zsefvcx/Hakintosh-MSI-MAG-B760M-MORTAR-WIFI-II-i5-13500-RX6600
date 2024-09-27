@@ -99,8 +99,7 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 
 [BlueToolFixup.kext, ~~BrcmPatchRAM3.kext 2.6.9~~?](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) <br />
 
-
-In config.plist added the following NVRAM entries link3<br />
+~~In config.plist added the following NVRAM entries link3<br />~~
 
       NVRAM > Add > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
           bluetoothExternalDongleFailed — Data — 00
@@ -109,6 +108,7 @@ In config.plist added the following NVRAM entries link3<br />
           bluetoothExternalDongleFailed
           bluetoothInternalControllerInfo
 
+~~or/and~~
 
 ~~add in boot arg -btlfxallowanyaddr~~ ?
 
