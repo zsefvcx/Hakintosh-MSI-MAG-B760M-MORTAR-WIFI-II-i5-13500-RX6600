@@ -18,7 +18,7 @@
 - **OS:** macOS Sequoia 15.0
 - **Bootloader:** OpenCore 1.0.1
 
-<img alt="img_1.png" height="342" src="img.png" width="280"/>
+<img alt="img_1.png" height="685" src="img.png" width="561"/>
 
 ## What's working
 
@@ -27,7 +27,7 @@
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
 - [x] WiFi  / with HeliPort and Itlwm
-- [ ] Bluetooth
+- [ ] Bluetooth (testing)
 - [x] USB
 - [x] macOS & Windows 11
 
@@ -90,6 +90,7 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 - PlatformInfo-Generic-ProcessorType: `3841` (need `RestrictEvents.kext`)
 
 # Bluetooth (testing) [thanks link](https://www.tonymacx86.com/threads/guide-macos-sequoia-nootedred-amd-radeon-graphics.330240/)
+[thanks link2](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
 
 IntelBluetoothFirmware.kext, IntelBTPatcher.kext 2.5.0 (thanks [@tonymacx86](https://www.tonymacx86.com/members/3/)) <br />
 BlueToolFixup.kext 2.6.9 ~~(You'll find it inside the BrcmPatchRAM folder)~~ <br />
