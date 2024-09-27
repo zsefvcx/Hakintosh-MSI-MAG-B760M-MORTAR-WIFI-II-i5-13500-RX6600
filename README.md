@@ -103,6 +103,8 @@ In config.plist added the following NVRAM entries, (thanks [@Shaneee](https://ww
           bluetoothExternalDongleFailed
           bluetoothInternalControllerInfo
 
+~~add in boot arg -btlfxallowanyaddr~~ ?
+
 ## Mount EFI Partition on macOS Sequoia and Later
 
 1. diskutil list
