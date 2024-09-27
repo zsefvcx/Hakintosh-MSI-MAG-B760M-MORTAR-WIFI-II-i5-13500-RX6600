@@ -25,9 +25,9 @@
 - [x] Restart / Shutdown
 - [x] Sleep / Wake
 - [x] WiFi  / with HeliPort and Itlwm
-<img alt="img2.png" height="595" src="img2.png" width="476"/>
+<img alt="img2.png" height="338" src="img2.png" width="298"/>
 - [X] Bluetooth
-<img alt="img3.png" height="595" src="img3.png" width="476"/>
+<img alt="img3.png" height="565" src="img3.png" width="414"/>
 - [x] USB
 - [x] macOS & Windows 11 & Linux (Debian)
 
