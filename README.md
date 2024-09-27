@@ -89,16 +89,14 @@ Most of efi configurations are based on [Dortania's guide for Comet Lake](https:
 - NVRAM-Del-4D1FDA02...: add item `revcpu`
 - PlatformInfo-Generic-ProcessorType: `3841` (need `RestrictEvents.kext`)
 
-# Bluetooth (testing) 
+# Bluetooth
 [link1](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/)
 [link2](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486)
 
-[IntelBluetoothFirmware.kext 2.5.0](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/post-36917) <br />
-[IntelBTPatcher.kext 2.5.0 pre-release one](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486#issuecomment-2357211572)
-
-[BlueToolFixup.kext](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) <br />
-
-In config.plist added the following NVRAM entries link3<br />
+1. [IntelBluetoothFirmware.kext 2.5.0](https://forum.amd-osx.com/threads/finally-intel-bluetooth-working-under-sequoia-15-0-24a335.5430/post-36917) <br />
+2. [IntelBTPatcher.kext 2.5.0 pre-release one](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/486#issuecomment-2357211572)
+3. [BlueToolFixup.kext](https://dortania.github.io/builds/?product=BrcmPatchRAM&viewall=true&version=2.6.9&sha=d7e3f23c374c7048bc31a207da3d1804f593f47b) <br />
+4. In config.plist added the following NVRAM entries link3<br />
 
       NVRAM > Add > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
           bluetoothExternalDongleFailed — Data — 00
@@ -106,7 +104,6 @@ In config.plist added the following NVRAM entries link3<br />
       NVRAM > Delete > 'New child under 7C436110-AB2A-4BBB-A880-FE41995C9F82'
           bluetoothExternalDongleFailed
           bluetoothInternalControllerInfo
-
 
 # Mount EFI Partition on macOS Sequoia and Later
 
